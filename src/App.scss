@@ -1,0 +1,108 @@
+$break-small: 480px;
+$break-medium: 900px;
+
+$body-bg : #fefefe;
+$body-font-color: #483b36;
+$hero-bg : #333;
+
+body {
+  font-family: "Helvetica", "Roboto", sans-serif;
+  font-size:16px;
+  background-color: $body-bg;
+  color: $body-font-color;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.bg-img {
+  position: relative;
+  height:70vh;
+  @media only screen and (max-width: $break-medium){
+    height: 50vh;
+  } 
+  width: 100%;
+  background: url(./assets/images/alex.jpg) center center no-repeat;
+  background-size: cover;
+  
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: radial-gradient(#66C6BA,#CE4E27);
+    opacity: .5; 
+  }
+}
+.header-content {
+  position:relative;
+  top:50%;
+  transform: translateY(-50%);
+  margin: 0 auto;
+  text-align: center;
+  
+  h1 {
+    color: white;
+    font-size: 12rem;
+    @media only screen and (max-width: $break-medium){
+      font-size:4rem;
+    } 
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0;
+  }
+  hr {
+    border: 1px solid white;
+    width: 50%;
+    margin: 15px auto;
+  }
+  h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 2rem;
+    @media only screen and (max-width: $break-medium){
+      font-size:1rem;
+    } 
+    color: white;
+    letter-spacing: 1px;
+  }
+}
+
+main {
+  max-width: 700px;
+  @media only screen and (max-width: $break-medium){
+    width:80%;
+  } 
+  margin: 65px auto;
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin:50px auto;
+    padding:0;
+    a {
+      font-size:1.75rem;
+      @media only screen and (max-width: $break-medium){
+        font-size:1rem;
+      } 
+      text-decoration:none;
+      color: #483b36;
+      &:hover {
+        color: #CE4E27
+      }
+    }
+  }
+  hr {
+    border: 1px solid #CE4E27;
+    width: 100%;
+    margin: 0 auto;
+  }
+  p {
+    line-height:1.5em;
+    font-size:1.125rem;
+  }
+}
