@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=GFS+Didot&display=swap');
+
 $break-small: 480px;
 $break-medium: 900px;
 
@@ -6,12 +8,11 @@ $body-font-color: #483b36;
 $hero-bg : #333;
 
 body {
-  font-family: "Helvetica", "Roboto", sans-serif;
+  font-family: 'GFS Didot', 'Times New Roman', Times, serif;
   font-size:16px;
   background-color: $body-bg;
-  color: $body-font-color;
+  color: $body-font-color; 
 }
-
 html, body {
   width: 100%;
   height: 100%;
@@ -48,6 +49,7 @@ html, body {
   h1 {
     color: white;
     font-size: 12rem;
+    font-family: "Helvetica", "Roboto", sans-serif;
     @media only screen and (max-width: $break-medium){
       font-size:4rem;
     } 
@@ -61,7 +63,7 @@ html, body {
     margin: 15px auto;
   }
   h2 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'GFS Didot', 'Times New Roman', Times, serif;
     font-weight: 700;
     font-size: 2rem;
     @media only screen and (max-width: $break-medium){
@@ -77,7 +79,7 @@ main {
   @media only screen and (max-width: $break-medium){
     width:80%;
   } 
-  margin: 65px auto;
+  margin: 65px auto 100px auto;
   ul {
     list-style-type: none;
     display: flex;
@@ -86,13 +88,15 @@ main {
     padding:0;
     a {
       font-size:1.75rem;
+      font-family: "Helvetica", "Roboto", sans-serif;
       @media only screen and (max-width: $break-medium){
         font-size:1rem;
       } 
       text-decoration:none;
       color: #483b36;
-      &:hover {
-        color: #CE4E27
+      &:hover, &:focus {
+        color: #CE4E27;
+        outline: none;
       }
     }
   }
@@ -103,6 +107,11 @@ main {
   }
   p {
     line-height:1.5em;
-    font-size:1.125rem;
+    font-size:1.25rem;
+    padding: 0 1rem;
+    @media only screen and (max-width: $break-medium){
+      font-size:1rem;
+      line-height:1.5rem;
+    }
   }
 }

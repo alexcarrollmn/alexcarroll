@@ -26,7 +26,7 @@ function App() {
           </li>
         </ul>
         <hr />
-        <p>A seasoned full-stack engineer with a passion for good design and user experience. I have experience in the latest javascript tools, including Angular and React on the front-end, and Node.js on the back-end, and strive to write clean, tested, and accessible code.  For the last four years I have been successfully working remotely as an individual contributor and am looking forward to a role where I can help a team bring ideas to reality.</p>
+        <p>A seasoned full-stack engineer with a passion for good design and UX with over eight years experience working on highly trafficked applications.  I have experience in the latest javascript tools, including Angular and React on the front-end, and Node.js on the back-end, and strive to write clean, tested, and accessible code.  For the last four years I have been successfully working remotely as an individual contributor and am looking forward to a role where I can help a team bring ideas to reality.</p>
       </main>
     </div>
   );
