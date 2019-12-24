@@ -1,6 +1,11 @@
 import React from 'react';
+import ReactGA from 'react-ga';
 import './App.scss';
 import resume from './assets/misc/carroll-resume.pdf';
+
+const trackingId = "UA-16262936-1";
+ReactGA.initialize(trackingId);
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 
 function App() {
