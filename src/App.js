@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactGA from 'react-ga';
 import './App.scss';
-import resume from './assets/misc/carroll-resume.pdf';
+import resume from './assets/misc/carroll_alex-resume.pdf';
 
 const trackingId = "UA-16262936-1";
 ReactGA.initialize(trackingId);
@@ -14,24 +14,29 @@ function App() {
       <header role="banner" className="bg-img">
         <div className="header-content">
           <h1>Hello, I'm Alex.</h1>
-          <hr />
-          <h2>Experienced Full-Stack Engineer based in San Diego, CA</h2>
+          <h2>Experienced Remote Lead Engineer based in San Diego, CA</h2>
         </div>
       </header>
       <main role="main">
         <ul>
           <li>
-            <a href={resume}>Resume</a>
+            <a href={resume} target="_blank">Resume</a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/alexcarrollmn/" target="_blank">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/alexcarrollmn/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </li>
           <li>
-            <a href="https://github.com/alexcarrollmn/" target="_blank">GitHub</a>
+            <a href="https://github.com/alexcarrollmn/" target="_blank" rel="noopener noreferrer">GitHub</a>
           </li>
         </ul>
         <hr />
-        <p>A seasoned full-stack engineer with a passion for good design and UX with over eight years experience working on highly trafficked applications.  I have experience in the latest javascript tools, including Angular and React on the front-end, and Node.js on the back-end, and strive to write clean, tested, and accessible code.  For the last four years I have been successfully working remotely as an individual contributor and am looking forward to a role where I can help a team bring ideas to reality.</p>
+        <p>
+          With experience leading high stakes, high traffic applications, I have
+          worked in several disparate verticals. After successfully leading
+          development and working with remote teams for six years and a decade
+          of total experience, I am looking for a remote role where I can bring my
+          experience and leadership skills to an exciting organization.
+        </p>
       </main>
     </div>
   );
